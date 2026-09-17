@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+  padding: 30px 15px;
+}
+
+.contenedor {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 30px 35px 35px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+  color: #1f2937;
+}
+
+.subtitulo {
+  margin: 0 0 25px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.campo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fila {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+.req {
+  color: #dc2626;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+input.invalido,
+textarea.invalido {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.8rem;
+  min-height: 16px;
+  margin-top: 4px;
+}
+
+.preview {
+  margin-top: 10px;
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  object-fit: cover;
+}
+
+.acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+#btnGuardar {
+  background: #2563eb;
+  color: #fff;
+}
+
+#btnGuardar:hover {
+  background: #1d4ed8;
+}
+
+#btnGuardar:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.secundario {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.secundario:hover {
+  background: #d1d5db;
+}
+
+.mensaje-servidor {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.mensaje-servidor.exito {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.mensaje-servidor.fallo {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
